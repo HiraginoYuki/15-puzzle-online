@@ -17,7 +17,7 @@ export function App() {
   const [, setRoom] = useGlobalState("room");
   const [, setRoomcount] = useGlobalState("roomcount");
   const [puzzles, setPuzzles] = useState([]);
-  const io = useSocketIO();
+  const io = useSocketIO("localhost:3250");
   useEffect(() => {
     io.on("connect", () => {
         setGameStatus("lobby");
