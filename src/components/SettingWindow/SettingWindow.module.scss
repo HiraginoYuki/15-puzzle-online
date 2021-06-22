@@ -10,7 +10,6 @@
   opacity: 1;
   &.hidden {
     opacity: 0;
-    backdrop-filter: blur(0px);
     pointer-events: none;
   }
 }
