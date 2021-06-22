@@ -5,7 +5,7 @@ let socket: Socket;
 
 export function useSocketIO() {
   if (!socket) {
-    socket = io("wss://15-puzzle-online-server.kazukazumein.repl.co");
+    socket = io();
   }
   defineOnGlobal({socket});
   return socket;
