@@ -5,7 +5,7 @@ let socket: Socket;
 
 export function useSocketIO(ws: string) {
   if (!socket) {
-    socket = io(ws);
+    socket = io(":3000");
   }
   defineOnGlobal({socket});
   return socket;
