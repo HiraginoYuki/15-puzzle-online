@@ -47,8 +47,8 @@ export function App() {
   return <>
     <div>
       <Header />
-      <Loading loadingMessage="Connecting..." isVisible={gameStatus === "connecting"} />
-      <Loading loadingMessage="Reconnecting..." isVisible={gameStatus === "reconnecting"} />
+      <Loading loadingMessage="Connecting... (test edit)" isVisible={gameStatus === "connecting"} />
+      <Loading loadingMessage="Reconnecting... (test edit)" isVisible={gameStatus === "reconnecting"} />
       <Lobby isVisible={gameStatus === "lobby"} rooms={rooms} />
       <Game isVisible={gameStatus === "ingame"} puzzles={puzzles}/>
       <Footer />
