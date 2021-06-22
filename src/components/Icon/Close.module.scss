@@ -1,0 +1,11 @@
+.close {
+  margin: 0 8px 0 auto;
+}
+
+.closeIcon {
+  transition: fill .1s;
+  fill: white;
+  svg:hover & {
+    fill: #BBFFBB;
+  }
+}

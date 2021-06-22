@@ -1,0 +1,21 @@
+.loading {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 88px);
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  user-select: none;
+  font-size: 12pt;
+  z-index: 1;
+  overflow: hidden;
+  &.hidden {
+    display: none;
+  }
+}
+
+.loadingspinner {
+  margin-left: 16px;
+}

@@ -1,0 +1,11 @@
+.settings {
+  margin: 0 8px 0 auto;
+}
+
+.settingsIcon {
+  transition: fill .1s;
+  fill: white;
+  svg:hover & {
+    fill: #BBFFBB;
+  }
+}

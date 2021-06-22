@@ -1,0 +1,61 @@
+.lobby {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 88px);
+  overflow-wrap: break-word;
+  margin-top: 48px;
+  user-select: none;
+  font-size: 12pt;
+  z-index: 1;
+  overflow: hidden;
+  &.hidden {
+    display: none;
+  }
+}
+
+.roomcreatebox {
+  width: 240px;
+  height: 80px;
+  background: #333;
+  margin: 10px 10px 20px 10px;
+  box-shadow: 0 0 5px 5px #222;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: box-shadow 0.1s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 5px #111;
+  }
+}
+
+.roomlist {
+  overflow: auto;
+  width: 240px;
+  height: calc(100% - 135px);
+  box-shadow: 0 0 5px 5px #222;
+  transition: box-shadow 0.1s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 5px #111;
+  }
+}
+
+.room {
+  width: auto;
+  height: 80px;
+  background: #333;
+  margin: 10px 10px 20px 10px;
+  box-shadow: 0 0 5px 5px #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: box-shadow 0.1s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 5px #111;
+  }
+}
+
+.room p {
+  pointer-events: none;
+}
