@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --mode development",
-    "deploy": "run-s deploy:*",
-    "deploy:build": "webpack --mode production",
-    "deploy:deploy": "gh-pages -d public"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@discordjs/collection": "^0.1.6",
