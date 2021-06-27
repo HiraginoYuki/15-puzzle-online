@@ -3,9 +3,9 @@ import { defineOnGlobal } from "./define-on-global";
 
 let socket: Socket;
 
-export function useSocketIO(ws: string) {
+export function useSocketIO(ws: string, option: object) {
   if (!socket) {
-    socket = io(ws);
+    socket = io(ws, option);
   }
   defineOnGlobal({socket});
   return socket;
