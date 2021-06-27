@@ -19,7 +19,7 @@ export function PuzzlePiece(props: PieceProps) {
   }
   return (
     <>
-      <div onMouseDown={tapPiece} className={joinClass(styles.piece, props.correct && styles.correct)}>{props.piece.id == 0 ? "" : props.piece.id}</div>
+      <div onMouseDown={tapPiece} className={joinClass(styles.piece, props.piece.id == props.piece.index + 1 ? styles.correct : "")}>{props.piece.id == 0 ? "" : props.piece.id}</div>
     </>
   );
 }
