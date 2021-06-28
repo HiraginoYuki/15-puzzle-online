@@ -20,7 +20,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Logo />
-      <p className={styles.title} >15Puzzle Online</p>
+      <p className={styles.title} >15 Puzzle Online</p>
       {gameStatus === "lobby" && <>
         <p className={styles.right}>Room Count: {roomCount}</p>
       </>}

@@ -1,19 +1,23 @@
 .piece {
-  background: #111;
-  color: #ccc;
-  margin: 5%;
-  width: 90%;
-  height: 90%;
-  user-select: none;
-  font-size: 24pt;
-  filter: invert(0%);
+  --piece-size: 48px;
+  --margin: 0.05;
+  --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
   display: flex;
-  flex-direction: column;
-  transition: cubic-bezier(0,1,1,0);
-  justify-content: center;
-  align-items: center;
-}
-
-.correct {
-  filter: invert(100%);
+  position: absolute;
+  width: calc(var(--piece-size) * (1 - var(--margin)));
+  height: calc(var(--piece-size) * (1 - var(--margin)));
+  margin: calc(var(--piece-size) * var(--margin) / 2);
+  transform: translate( calc(var(--piece-size) * var(--x)), calc(var(--piece-size) * var(--y)) );
+  border-radius: calc(var(--piece-size) / 16);
+  background-color: #111;
+  font-weight: 900;
+  filter: invert(0%);
+  transition: .1s transform var(--easeOutCirc)
+            , .2s filter var(--easeOutCirc);
+  &.hidden { opacity: 0; }
+  &.correct { filter: invert(100%); }
+  > .content {
+    margin: auto;
+    font-size: calc(var(--piece-size) * 9 / 20);
+  }
 }

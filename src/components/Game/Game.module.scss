@@ -13,28 +13,37 @@
   }
 }
 
-.puzzle {
-  background: darkturquoise;
-  width: 240px;
-  height: 170px;
-  margin-bottom: 8px;
+.puzzlecontainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.puzzledisabled {
+.puzzle {
   background: darkturquoise;
-  filter: brightness(80%);
-  width: 240px;
-  height: 170px;
-  margin-bottom: 8px;
+  width: 200px;
+  height: 220px;
+  color: #fff;
+  font-size: 12pt;
+  &disabled {
+    background: darkturquoise;
+    color: #fff;
+    font-size: 12pt;
+    width: 200px;
+    height: 220px;
+    filter: brightness(80%);
+  }
 }
-.puzzle p {
-  color: #ccc;
+
+.username {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
 }
 
 .puzzlepiece {
   position: relative;
-  display: grid;
-  width: 240px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
+  width: calc(100% - 8px);
+  height: calc(100% - 24px);
+  margin: 4px;
 }
