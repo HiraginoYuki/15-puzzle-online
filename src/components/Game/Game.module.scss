@@ -20,14 +20,16 @@
 
 .puzzle {
   background: darkturquoise;
-  width: 200px;
-  height: 220px;
   color: #fff;
   font-size: 12pt;
+  margin-right: 8px;
+  width: 200px;
+  height: 220px;
   &disabled {
     background: darkturquoise;
     color: #fff;
     font-size: 12pt;
+    margin-right: 8px;
     width: 200px;
     height: 220px;
     filter: brightness(80%);
