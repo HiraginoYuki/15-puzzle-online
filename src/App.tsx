@@ -10,7 +10,6 @@ import Collection from "@discordjs/collection";
 import { SettingWindow } from "./components/SettingWindow/SettingWindow";
 import { useGlobalState } from "./global-state";
 
-
 export function App() {
   const [gameStatus, setGameStatus] = useGlobalState("gameStatus");
   const [rooms, setRooms] = useState<Collection<string, RoomData>>(new Collection());
