@@ -58,4 +58,7 @@
 
 .room p {
   pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
