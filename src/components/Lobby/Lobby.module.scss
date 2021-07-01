@@ -17,7 +17,7 @@
 }
 
 .roomcreatebox {
-  width: 240px;
+  width: 320px;
   height: 80px;
   background: #333;
   margin: 10px 10px 20px;
@@ -32,7 +32,7 @@
 
 .roomlist {
   overflow: auto;
-  width: 240px;
+  width: 320px;
   height: calc(100% - 135px);
   box-shadow: 0 0 5px 5px #222;
   transition: box-shadow 0.1s ease-in-out;
