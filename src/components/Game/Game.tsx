@@ -47,7 +47,7 @@ export function Game(props: GameProps) {
               <div className={getSocketIO().id == puzzledata[0] ? styles.puzzle : styles.puzzledisabled}>
                 <p className={styles.username}>{puzzledata[0]}</p>
                 <div className={styles.puzzlepiece}>
-                  {puzzledata[1].sort((a,b) => a.id - b.id).map((piece: PieceData) => {
+                  {puzzledata[1].sort((a, b) => a.id - b.id).map((piece: PieceData) => {
                     return <PuzzlePiece socketid={puzzledata[0]} piece={piece} correct={false}></PuzzlePiece>
                   })}
                 </div>
