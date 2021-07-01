@@ -16,7 +16,6 @@ export interface PieceData {
   id: number
 }
 
-
 export function Game(props: GameProps) {
   const [room] = useGlobalState("room");
   const roomRef = Object.assign(useRef(room), {current: room});
