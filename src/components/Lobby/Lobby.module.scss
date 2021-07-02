@@ -1,4 +1,5 @@
 .lobby {
+  --roomlist-height: 320px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -20,7 +21,7 @@ input[type="text"] {
 }
 
 .roomcreatebox {
-  width: 320px;
+  width: var(--roomlist-height);
   height: 80px;
   background: #333;
   margin: 10px 10px 20px;
@@ -35,7 +36,7 @@ input[type="text"] {
 
 .roomlist {
   overflow: auto;
-  width: 320px;
+  width: var(--roomlist-height);
   height: calc(100% - 135px);
   box-shadow: 0 0 5px 5px #222;
   transition: box-shadow 0.1s ease-in-out;
