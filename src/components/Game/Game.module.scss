@@ -18,28 +18,37 @@
 }
 
 .puzzle {
-  background: darkturquoise;
+  background: #333;
   color: #fff;
-  font-size: 12pt;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  width: 200px;
-  height: 220px;
+  width: 210px;
+  height: 230px;
+  margin: 16px 0 0 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 3px #222;
+  transition: box-shadow 0.1s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 5px 3px #111;
+  }
   &disabled {
-    background: darkturquoise;
+    background: #333;
     color: #fff;
-    font-size: 12pt;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    width: 200px;
-    height: 220px;
+    width: 210px;
+    height: 230px;
+    margin: 16px 0 0 16px;
+    border-radius: 8px;
     filter: brightness(80%);
+    box-shadow: 0 0 5px 3px #222;
+    transition: box-shadow 0.1s ease-in-out;
+    &:hover {
+      box-shadow: 0 0 5px 3px #111;
+    }
   }
 }
 
 .username {
   overflow: hidden;
   height: 18px;
+  margin: 0 0 0 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 16px;
@@ -49,5 +58,5 @@
   position: relative;
   width: calc(100% - 8px);
   height: calc(100% - 24px);
-  margin: 4px;
+  margin: 8px;
 }
