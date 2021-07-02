@@ -8,7 +8,6 @@ import styles from "./PuzzlePiece.module.scss";
 interface PieceProps {
   socketid: string;
   piece: PieceData;
-  correct: boolean;
 }
 
 
