@@ -22,6 +22,7 @@ export function PuzzlePiece(props: PieceProps) {
   return (
     <div
       onMouseDown={tapPiece}
+      onTouchStart={tapPiece}
       className={joinClass(props.piece.id == 0 ? styles.hidden : styles.piece, props.piece.id == props.piece.index + 1 ? styles.correct : "")}
       style={{ "--x": props.piece.x, "--y": props.piece.y } as CSSProperties}
     >
