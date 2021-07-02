@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "reset-css";
 import { Header } from "./components/Header/Header";
 import { Loading } from "./components/Loading/Loading";
 import { Lobby, RoomData } from "./components/Lobby/Lobby";

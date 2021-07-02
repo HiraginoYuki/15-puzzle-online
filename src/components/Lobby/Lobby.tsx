@@ -38,11 +38,11 @@ export function Lobby(props: LobbyProps) {
     <main>
       <div className={props.isVisible ? styles.lobby : styles.lobby + " " + styles.hidden}>
         <div className={styles.roomcreatebox}>
-          <input id="roomname_input" placeholder="Room Name (Required)"></input>
+          <input type="text" id="roomname_input" placeholder="Room Name (Required)"></input>
           <br></br>
-          <input id="roomdescription_input" placeholder="Room Description (Optional)"></input>
+          <input type="text" id="roomdescription_input" placeholder="Room Description (Optional)"></input>
           <br></br>
-          <input id="roompassword_input" placeholder="Password (Optional)"></input>
+          <input type="text" id="roompassword_input" placeholder="Password (Optional)"></input>
           <button onClick={createRoom}>Create Room</button>
         </div>
         <div className={styles.roomlist}>
